@@ -8,14 +8,14 @@
   </head>
   <body>
     <header class="header">
-      <img src="/assets/logo.jpg" alt="Nasa Logo" class="header__logo" />
+      <a href="../index.html">
+        <img src="/assets/logo.jpg" alt="Nasa Logo" class="header__logo" />
+      </a>
       <nav class="nav__list">
         <ul class="header__list">
           <li><a href="/index.html" class="nav__item">ABOUT</a></li>
           <li>
-            <a href="./pages/discovery.html" class="nav__item"
-              >DISCOVERY TOOL</a
-            >
+            <a href="/pages/discovery.html" class="nav__item">DISCOVERY TOOL</a>
           </li>
         </ul>
       </nav>
@@ -27,7 +27,7 @@
           <h1 class="hero__title">NASA DISCOVERY TOOL</h1>
         </div>
       </section>
-      <section class="camera__info">
+      <section class="camera__info discovery-container">
         <!-- javascript  -->
 
         <h2>Select a Camera</h2>
@@ -37,27 +37,32 @@
           <option value="RHAZ">RHAZ</option>
           <option value="MAST">MAST</option>
           <option value="CHEMCAM">CHEMCAM</option>
-          <option value="MAHLI">MAHLI</option>
-          <option value="MARDI">MARDI</option>
           <option value="NAVCAM">NAVCAM</option>
-          <option value="PANCAM">PANCAM</option>
-          <option value="MINITES">MINITES</option>
         </select>
         <p id="result">Your selection will appear here.</p>
+        <div class="photos-container" id="photos-container"></div>
       </section>
     </main>
 
     <footer class="footer">
-      <h2>Learn More</h2>
-      <article>
-        <p>Technology</p>
-      </article>
-      <article>
-        <p>Software</p>
-      </article>
-      <article>
-        <p>Spinoff</p>
-      </article>
+      <h2 class="footer__title">Learn More</h2>
+      <div class="articles">
+        <article class="article">
+          <a class="link" href="https://technology.nasa.gov/">
+            <p>Technology</p>
+          </a>
+        </article>
+        <article class="article">
+          <a class="link" href="https://software.nasa.gov/">
+            <p>Software</p>
+          </a>
+        </article>
+        <article class="article">
+          <a class="link" href="https://spinoff.nasa.gov/">
+            <p>Spinoff</p>
+          </a>
+        </article>
+      </div>
     </footer>
 
     <script src="../scripts/discovery.js"></script>

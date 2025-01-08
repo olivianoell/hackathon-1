@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
 }
 
 h2 {
@@ -51,7 +52,8 @@ h2 {
   display: flex;
 }
 
-.header, .header__list {
+.header,
+.header__list {
   display: flex;
   flex-direction: row;
 }
@@ -64,7 +66,7 @@ h2 {
   padding-top: 1.3rem;
 }
 .header__logo {
-  width: 5%;
+  width: 70px;
   height: 20%;
   margin-left: 0;
   margin-left: 3rem;
@@ -75,10 +77,10 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  color: #E1E1E1;
+  color: #e1e1e1;
   font-size: 0.875rem;
   font-weight: 400;
-  margin-left: 58rem;
+  margin-left: 48rem;
   width: 40%;
   padding-bottom: 0.8rem;
   margin-top: 2.3rem;
@@ -120,6 +122,16 @@ h2 {
   padding-top: 0;
 }
 
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
 .header__logo {
   height: 80%;
 }
@@ -127,10 +139,21 @@ h2 {
 .camera__info {
   background-image: url("/assets/538145.jpg");
   background-size: cover;
-  height: 42rem;
+  height: 80rem;
   background-position: center;
-  padding-left: 3rem;
+  padding: 0 3rem;
   margin-top: -3.75rem;
   color: #FEFCFF;
   padding-top: 1.7rem;
+}
+
+.photos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 5px;
+}
+.photos-container img {
+  width: calc(33.3% - 5px);
 }/*# sourceMappingURL=discovery.css.map */

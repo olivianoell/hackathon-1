@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
 }
 
 h2 {
@@ -51,7 +52,8 @@ h2 {
   display: flex;
 }
 
-.header, .header__list {
+.header,
+.header__list {
   display: flex;
   flex-direction: row;
 }
@@ -64,7 +66,7 @@ h2 {
   padding-top: 1.3rem;
 }
 .header__logo {
-  width: 5%;
+  width: 70px;
   height: 20%;
   margin-left: 0;
   margin-left: 3rem;
@@ -75,10 +77,10 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  color: #E1E1E1;
+  color: #e1e1e1;
   font-size: 0.875rem;
   font-weight: 400;
-  margin-left: 58rem;
+  margin-left: 48rem;
   width: 40%;
   padding-bottom: 0.8rem;
   margin-top: 2.3rem;
@@ -118,6 +120,16 @@ h2 {
   height: 20rem;
   background-color: rgba(82, 36, 19, 0.671);
   padding-top: 0;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
 
 .wrap {
