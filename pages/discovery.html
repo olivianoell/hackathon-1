@@ -3,53 +3,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../styles/discovery.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="heading-nav-container">
-        <div class="heading__logo-tittle-container">
-          <a class="heading__logo-link" href="#">
-            <img src="#" alt="#" class="#" />
-          </a>
-          <h2 class="heading__tittle">Discovery</h2>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__link">
-            <li><a class="nav__link" href="#">ABOUT</a></li>
-            <li>
-              <a class="nav__link" href="#">DISCOVERY TOOL</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header">
+      <img src="/assets/logo.jpg" alt="Nasa Logo" class="header__logo" />
+      <nav class="nav__list">
+        <ul class="header__list">
+          <li><a href="/index.html" class="nav__item">ABOUT</a></li>
+          <li>
+            <a href="./pages/discovery.html" class="nav__item"
+              >DISCOVERY TOOL</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="hero">
-        <h1>Discovery Tool</h1>
-      </section>
-      <section>
-        <!-- javascript  -->
-        <div class="discovery-container">
-          <div class="dropdown">
-            <label for="cameraOptions">Select Camera: </label>
-            <select id="cameraOptions" onchange="handleSelection(event)">
-              <option value="" disabled selected>--Choose an option--</option>
-              <option value="FHAZ">FHAZ</option>
-              <option value="RHAZ">RHAZ</option>
-              <option value="MAST">MAST</option>
-              <option value="CHEMCAM">CHEMCAM</option>
-              <option value="MAHLI">MAHLI</option>
-              <option value="MARDI">MARDI</option>
-              <option value="NAVCAM">NAVCAM</option>
-              <option value="PANCAM">PANCAM</option>
-              <option value="MINITES">MINITES</option>
-            </select>
-          </div>
-          <h3>hello</h3>
+        <div class="hero__wrap">
+          <h1 class="hero__title">NASA DISCOVERY TOOL</h1>
         </div>
+      </section>
+      <section class="camera__info">
+        <!-- javascript  -->
+
+        <h2>Select a Camera</h2>
+        <label for="camera-menu">Choose a camera: </label>
+        <select id="camera-menu">
+          <option value="FHAZ">FHAZ</option>
+          <option value="RHAZ">RHAZ</option>
+          <option value="MAST">MAST</option>
+          <option value="CHEMCAM">CHEMCAM</option>
+          <option value="MAHLI">MAHLI</option>
+          <option value="MARDI">MARDI</option>
+          <option value="NAVCAM">NAVCAM</option>
+          <option value="PANCAM">PANCAM</option>
+          <option value="MINITES">MINITES</option>
+        </select>
+        <p id="result">Your selection will appear here.</p>
       </section>
     </main>
 

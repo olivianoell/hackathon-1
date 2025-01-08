@@ -15,11 +15,26 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 300;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
+}
+.nav__item {
+  color: #FEFCFF;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav__item:hover {
+  color: #393939;
 }
 
 .nav__link-list {
@@ -34,4 +49,88 @@ body {
   margin-right: 1.25rem;
   margin-top: 1.4375rem;
   display: flex;
+}
+
+.header, .header__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  background-color: #051C55;
+  max-height: 15rem;
+  width: 100%;
+  display: flex;
+  padding-top: 1.3rem;
+}
+.header__logo {
+  width: 5%;
+  height: 20%;
+  margin-left: 0;
+  margin-left: 3rem;
+  border-radius: 10%;
+  padding-top: 0;
+}
+.header__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: #E1E1E1;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 58rem;
+  width: 40%;
+  padding-bottom: 0.8rem;
+  margin-top: 2.3rem;
+  padding-right: 3rem;
+}
+
+.hero {
+  background-image: url(/assets/earth-starry-sky-night-world-dark-blue-3840x2160-3874.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 42rem;
+  width: 100%;
+  align-content: center;
+  overflow: hidden;
+}
+.hero__title {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.5rem;
+  font-weight: 350;
+  margin-top: 0;
+  opacity: 92%;
+  padding-left: 2rem;
+  margin-top: 8.5rem;
+}
+.hero__wrap {
+  padding-left: 1rem;
+  height: 42rem;
+  width: 100%;
+  padding-top: 4.8rem;
+  margin-top: 0rem;
+  background-color: rgba(17, 18, 54, 0.084);
+}
+
+.footer {
+  color: #FEFCFF;
+  height: 20rem;
+  background-color: rgba(82, 36, 19, 0.671);
+  padding-top: 0;
+}
+
+.header__logo {
+  height: 80%;
+}
+
+.camera__info {
+  background-image: url("/assets/538145.jpg");
+  background-size: cover;
+  height: 42rem;
+  background-position: center;
+  padding-left: 3rem;
+  margin-top: -3.75rem;
+  color: #FEFCFF;
+  padding-top: 1.7rem;
 }/*# sourceMappingURL=discovery.css.map */

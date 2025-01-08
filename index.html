@@ -8,47 +8,43 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="heading-nav-container">
-        <div class="heading__logo-tittle-container">
-          <a class="heading__logo-link" href="#">
-            <img src="/assets/logo.jpg" alt="#" class="#" />
-          </a>
-          <h2 class="heading__tittle">Discovery</h2>
-        </div>
-
-        <nav class="nav">
-          <ul class="nav__link">
-            <li><a class="nav__link" href="#">ABOUT</a></li>
-            <li>
-              <a class="nav__link" href="./pages/discovery.html"
-                >DISCOVERY TOOL</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="header">
+        <img src="/assets/logo.jpg" alt="Nasa Logo" class="header__logo"/>
+      <nav class="nav__list">
+        <ul class="header__list">
+          <li><a href="/index.html" class="nav__item">ABOUT</a></li>
+          <li><a href="./pages/discovery.html" class="nav__item">DISCOVERY TOOL</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero">
-        <h1>Discovery Day?</h1>
+        <div class="hero__wrap">
+        <h1 class="hero__title">NASA DISCOVERY TOOL</h1>
+      </div>
       </section>
       <section>
-        <h2>About</h2>
-        <p>Our site does this...</p>
+        <div class="divider"></div>
+        <div class="wrap">
+          <div class="wrap__card">
+        <h2 class="about">About</h2>
+        <p class="about__text">Our Mission is to introduce a narrowed down search for all the Mars images available in the NASA library. The User would be able to use the Discovery Tool to choose from over 7 different cameras to access different views of the Planet by their location. This could assist the researchers and scientists and save time in further research. </p>
+      </div>
+      </div>
+        <div class="divider"></div>
       </section>
     </main>
 
     <!--foot-->
     <footer class="footer">
-      <h2>Learn More</h2>
-      <article>
+      <h2 class="footer__title">Learn More</h2>
+      <article class="article">
         <p>Technology</p>
       </article>
-      <article>
+      <article class="article">
         <p>Software</p>
       </article>
-      <article>
+      <article class="article">
         <p>Spinoff</p>
       </article>
     </footer>

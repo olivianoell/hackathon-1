@@ -1,1 +1,18 @@
 @use "./partials/global" as *;
+@use "./partials/variables" as *;
+
+
+.header__logo {
+    height: 80%;
+}
+.camera__info {
+    background-image: url('/assets/538145.jpg');
+    background-size: cover;
+    height: 42rem;
+    background-position: center;
+    padding-left: 3rem;
+    margin-top: -3.75rem;
+    color: $white;
+    padding-top: 1.7rem;
+    //border: 2px dotted rgb(64, 43, 226);
+}
