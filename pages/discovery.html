@@ -33,6 +33,21 @@
       <section>
         <!-- javascript  -->
         <div class="discovery-container">
+          <div class="dropdown">
+            <label for="cameraOptions">Select Camera: </label>
+            <select id="cameraOptions" onchange="handleSelection(event)">
+              <option value="" disabled selected>--Choose an option--</option>
+              <option value="FHAZ">FHAZ</option>
+              <option value="RHAZ">RHAZ</option>
+              <option value="MAST">MAST</option>
+              <option value="CHEMCAM">CHEMCAM</option>
+              <option value="MAHLI">MAHLI</option>
+              <option value="MARDI">MARDI</option>
+              <option value="NAVCAM">NAVCAM</option>
+              <option value="PANCAM">PANCAM</option>
+              <option value="MINITES">MINITES</option>
+            </select>
+          </div>
           <h3>hello</h3>
         </div>
       </section>
